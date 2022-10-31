@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins";
+  }
+}
+
+@layer components {
+  html {
+    @apply scroll-smooth;
+  }
+  .drop-down-item {
+    @apply flex py-2 px-3 items-center text-sm gap-2.5 w-full border border-border-primary rounded-lg whitespace-nowrap hover:bg-primary hover:text-white hover:stroke-white stroke-icon;
+  }
+  .avatar {
+    @apply rounded-full w-10 h-10 flex items-center justify-center hover:cursor-pointer;
+  }
+
+  .profile-active {
+    @apply w-1 h-14 bg-primary rounded-r-lg absolute left-0;
+  }
+
+  .sidebar-item {
+    @apply flex gap-[18px] px-[18px] items-center text-sm py-2.5 w-full rounded-lg  whitespace-nowrap hover:bg-primary hover:text-white hover:stroke-white stroke-icon transition-all;
+  }
+
+  .sidebar-item-mob {
+    @apply flex gap-4 px-6 items-center text-base py-3 w-full rounded-xl  whitespace-nowrap hover:bg-primary hover:text-white hover:stroke-white stroke-[#6C7C8F] border border-border-primary text-[#6C7C8F] font-normal transition-all;
+  }
+
+  .profile-box {
+    @apply grid grid-cols-2 grid-rows-2 justify-between h-40 p-6 text-secondary border border-border-primary rounded-lg;
+  }
+
+  .sidebar-active {
+    @apply bg-primary text-white stroke-white;
+  }
+
+  .mob-nav {
+    @apply cursor-pointer;
+  }
+
+  .pro-active {
+    @apply bg-white rounded-md transition-all duration-300 shadow-box scale-105;
+  }
+
+  .pro-tab {
+    @apply px-7 py-2.5 font-normal lg:text-base text-sm cursor-pointer;
+  }
+
+  .profile-container {
+    @apply transition-all animate-fadeIn;
+  }
+
+  .upload {
+    @apply border border-orange-primary rounded-[4px] p-14 min-w-min;
+  }
+
+  .projects {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4;
+  }
+
+  .project {
+    @apply p-3 min-w-min border border-border-secondary rounded-lg;
+  }
+
+  .savedKeywords {
+    @apply grid lg:grid-cols-2 p-8 gap-4 max-w-5xl;
+  }
+
+  .savedKeyword {
+    @apply text-secondary whitespace-nowrap border-b border-[#E5E5E5] px-6 pb-4;
+  }
+
+  .addKeyword {
+    @apply font-normal flex items-center whitespace-nowrap pb-2 pl-6;
+  }
+
+  .btn-register {
+    @apply px-7 py-3 md:px-12 w-full lg:w-fit md:py-3 rounded flex justify-center text-sm md:text-base items-center text-white bg-primary font-normal gap-1;
+  }
+
+  .btn-personal {
+    @apply flex justify-center items-center border border-r-0 border-primary border-opacity-10 rounded-l;
+  }
+
+  .btn-business {
+    @apply flex justify-center items-center gap-3 border border-l-0 border-primary border-opacity-10 rounded-r;
+  }
+
+  .check-box {
+    @apply h-fit px-1.5 py-2 rounded-md bg-[#1BC5BD] bg-opacity-[0.16];
+  }
+
+  .pro-tab-mob {
+    @apply relative p-1 pb-3 sm:p-4 cursor-pointer;
+  }
+
+  .pro-tab-mob-active {
+    @apply absolute -bottom-0.5 left-0 bg-primary transition-all w-full  h-0.5 animate-opening;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}

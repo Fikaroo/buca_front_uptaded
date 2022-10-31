@@ -1,0 +1,12 @@
+{
+  "name": "buca_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./src/css/style.css --watch",
+    "prod": "npx tailwindcss -i ./src/tailwind.css -o ./src/css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

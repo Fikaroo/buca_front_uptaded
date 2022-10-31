@@ -1,0 +1,343 @@
+{
+  "navLinks": [
+    { "id": "logo", "title": "../assets/images/buca_logo.svg" },
+    { "id": "whyBuca", "title": "Buca nədir?" },
+    { "id": "pricing", "title": "Paketlər" },
+    { "id": "contact", "title": "Əlaqə" },
+    {
+      "id": "lang",
+      "title": [
+        { "id": "az", "title": "../assets/icons/az_flag.svg" },
+        { "id": "en", "title": "../assets/icons/en_flag.svg" }
+      ]
+    }
+  ],
+
+  "hero": {
+    "title": "Bucard - biznes şəbəkəni yarat!",
+    "content": "Get started with a Free plan or start 14 days Free Trial with any of the paid plans.",
+    "button": { "content": "Qeydiyyatdan keç / Ödənişsiz!" },
+    "features": {
+      "content": "Will be available on Google Play Market and App Store soon",
+      "links": [
+        {
+          "id": 1,
+          "link": "#",
+          "image": "../assets/images/apple_store.svg"
+        },
+        {
+          "id": 2,
+          "link": "#",
+          "image": "../assets/images/google_play.svg"
+        }
+      ]
+    },
+    "image": "../assets/images/hero_image_component.svg"
+  },
+
+  "whyBuca": {
+    "title": "Buca nədir?",
+    "tabButton": [
+      { "id": "personal", "content": "Personal" },
+      { "id": "business", "content": "Bucard Business" }
+    ],
+    "content": {
+      "personal": {
+        "button": { "content": "Qeydiyyatdan keç / Ödənişsiz!" },
+        "list": [
+          {
+            "id": 1,
+            "content": "Məkan və vəzifəyə görə axtarış"
+          },
+          {
+            "id": 2,
+            "content": "Şirkət və şəxslərlə virtual tanışlıq"
+          },
+          {
+            "id": 3,
+            "content": "Özünün və ya şirkətinin rahat şəkildə tanıtımı"
+          },
+          {
+            "id": 4,
+            "content": "Rahat və asan kommunikasiya"
+          },
+          {
+            "id": 5,
+            "content": "Netvorkinq"
+          }
+        ],
+        "image": "../assets/images/personal_image.svg"
+      },
+      "business": {
+        "button": {
+          "content": "Qeydiyyatdan keç / Ödənişsiz!"
+        },
+        "list": [
+          {
+            "id": 1,
+            "content": "Biznesin tanıtımı"
+          },
+          {
+            "id": 2,
+            "content": "Kriteriyalar əsasında əməkdaş axtarışı"
+          },
+          {
+            "id": 3,
+            "content": "Biznes partnyorluğunun yaradılması"
+          },
+          {
+            "id": 4,
+            "content": "Davamlı və dinamik inkişaf"
+          },
+          {
+            "id": 5,
+            "content": "Asan və sürətli kommunikasiya"
+          }
+        ],
+        "image": "../assets/images/business_image.svg"
+      }
+    }
+  },
+
+  "pricing": {
+    "title": "Xəyalındakı biznes profilini yarat!",
+    "content": "-",
+    "tabButton": [
+      { "id": "personal", "content": "Personal" },
+      { "id": "business", "content": "Bucard Business" }
+    ],
+    "plans": {
+      "personal": [
+        {
+          "id": "free",
+          "title": "Free to start!",
+          "price": "0₼",
+          "content": "Əlaqələri genişləndir",
+          "list": [
+            {
+              "id": 1,
+              "content": "Buca Box"
+            },
+            {
+              "id": 2,
+              "content": "User & Company search"
+            },
+            {
+              "id": 3,
+              "content": "NFC / QR code saves"
+            }
+          ]
+        },
+        {
+          "id": "standart",
+          "title": "Standart",
+          "price": "1.89₼",
+          "content": "Check the platform to see how it works.",
+          "list": [
+            {
+              "id": 1,
+              "content": "Buca Box"
+            },
+            {
+              "id": 2,
+              "content": "User & Company search"
+            },
+            {
+              "id": 3,
+              "content": "NFC / QR code saves"
+            },
+            {
+              "id": 4,
+              "content": "Private Account"
+            },
+            {
+              "id": 5,
+              "content": "Profile link share"
+            },
+            {
+              "id": 6,
+              "content": "NFC / QR code share"
+            },
+            {
+              "id": 7,
+              "content": "Personal portfolio"
+            },
+            {
+              "id": 8,
+              "content": "Keywords"
+            },
+            {
+              "id": 9,
+              "content": "Public Account"
+            }
+          ]
+        },
+        {
+          "id": "pro",
+          "title": "Pro",
+          "price": "4.89₼",
+          "content": "Check the platform to see how it works.",
+          "list": [
+            {
+              "id": 1,
+              "content": "Buca Box"
+            },
+            {
+              "id": 2,
+              "content": "User & Company search"
+            },
+            {
+              "id": 3,
+              "content": "NFC / QR code saves"
+            },
+            {
+              "id": 4,
+              "content": "Detailed Profile"
+            },
+            {
+              "id": 5,
+              "content": "Profile link share"
+            },
+            {
+              "id": 6,
+              "content": "NFC / QR code share"
+            },
+            { "id": 7, "content": "Get Hired" },
+            {
+              "id": 8,
+              "content": "Personal portfolio"
+            },
+            {
+              "id": 9,
+              "content": "Keywords"
+            },
+            {
+              "id": 10,
+              "content": "Public Account"
+            }
+          ]
+        }
+      ],
+      "business": [
+        {
+          "id": "business",
+          "title": "Business",
+          "price": "8.89₼",
+          "content": "Check the platform to see how it works.",
+          "list": [
+            {
+              "id": 1,
+              "content": "Buca Box"
+            },
+            {
+              "id": 2,
+              "content": "User & Company search"
+            },
+            {
+              "id": 3,
+              "content": "NFC / QR code saves"
+            },
+            {
+              "id": 4,
+              "content": "Detailed Profile"
+            },
+            {
+              "id": 5,
+              "content": "Profile link share"
+            },
+            {
+              "id": 6,
+              "content": "NFC / QR code share"
+            },
+            { "id": 7, "content": "Public Account" },
+            {
+              "id": 8,
+              "content": "5 Product link"
+            },
+            {
+              "id": 9,
+              "content": "5 Service link"
+            },
+            {
+              "id": 10,
+              "content": "Public location"
+            },
+            {
+              "id": 11,
+              "content": "More customers"
+            }
+          ]
+        },
+        {
+          "id": "company",
+          "title": "Company",
+          "price": "11.89₼",
+          "content": "Check the platform to see how it works.",
+          "list": [
+            {
+              "id": 1,
+              "content": "Buca Box"
+            },
+            {
+              "id": 2,
+              "content": "User & Company search"
+            },
+            {
+              "id": 3,
+              "content": "NFC / QR code saves"
+            },
+            {
+              "id": 4,
+              "content": "Detailed Profile"
+            },
+            {
+              "id": 5,
+              "content": "Profile link share"
+            },
+            {
+              "id": 6,
+              "content": "NFC / QR code share"
+            },
+            { "id": 7, "content": "Public Account" },
+            {
+              "id": 8,
+              "content": "Limitless Product link"
+            },
+            {
+              "id": 9,
+              "content": "Limitless Service link"
+            },
+            {
+              "id": 10,
+              "content": "10 Public location"
+            },
+            {
+              "id": 11,
+              "content": "Get listed on company catalogue"
+            },
+            {
+              "id": 12,
+              "content": "B2C & B2B customers"
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "our": {
+      "image": "../assets/images/buca_logo.svg",
+      "corp": "© All rights recerved • 2021 Bucha.Tech"
+    },
+    "contact": {
+      "number": "+994 50 670 75 04",
+      "email": "contact@buca.tech"
+    },
+    "socialMedia": {
+      "fb": { "link": "#" },
+      "in": { "link": "#" },
+      "tt": { "link": "#" }
+    }
+  }
+}

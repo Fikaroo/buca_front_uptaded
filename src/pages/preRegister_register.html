@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../assets/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Register</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-medium text-text-black overflow-x-hidden">
+    <main class="flex gap-4">
+        <section class="sm:ml-32 mx-4 lg:mr-0 sm:mr-32 flex justify-center mt-10 sm:mt-20 lg:w-4/12 w-full">
+            <div class="w-full lg:max-w-md">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <button class="font-normal whitespace-nowrap flex justify-center items-center gap-2.5">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.99996 18.3334C14.6023 18.3334 18.3333 14.6025 18.3333 10.0001C18.3333 5.39771 14.6023 1.66675 9.99996 1.66675C5.39759 1.66675 1.66663 5.39771 1.66663 10.0001C1.66663 14.6025 5.39759 18.3334 9.99996 18.3334Z"
+                                        stroke="#535861" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.05 12.9417L8.1167 10L11.05 7.05835" stroke="#535861" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Back homepage
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-center relative">
+                        <button class="cursor-pointer lang-btn">
+                            <img src="../assets/icons/az_flag.svg" alt="" />
+                        </button>
+                        <!--   <div
+                            class="w-44 absolute font-normal hidden p-6 rounded-md border border-secondary border-opacity-[0.06] top-10 right-0 space-y-8 transition-all animate-down lang-dropdown">
+                            <p class="animate-down"></p> 
+                            <div class="flex gap-3 cursor-pointer w-fit">
+                                <img src="../assets/icons/az_flag.svg" alt="" />Azerbaijani
+                            </div>
+                            <div class="flex gap-3 cursor-pointer w-fit">
+                                <img src="../assets/icons/en_flag.svg" alt="" />English
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <h1 class="mt-[70px] text-secondary text-[32px]">Pre Registration</h1>
+                <p class="font-normal mb-8 mt-3">Be the first user</p>
+                <form class="space-y-6 font-normal">
+                    <div class="flex flex-col">
+                        <label> Mail * </label>
+                        <input type="text"
+                            class="font-normal text-sm mt-3 w-full px-6 py-[18px] text-secondary lg:max-w-sm rounded border border-[#E8E8E8] placeholder:text-[#C9CACD] focus:border-primary focus:outline-none"
+                            placeholder="example@gmail.com" />
+                    </div>
+                    <div class="flex flex-col relative">
+                        <label class="text-secondary">
+                            Fəaliyət sahəniz (optional)
+                        </label>
+                        <div
+                            class="font-normal cursor-pointer flex justify-between items-center text-sm mt-3 w-full stroke-secondary px-6 py-[18px] lg:max-w-sm rounded border border-text-black focus:outline-none list-field">
+                            <span class="keyword-selected">Seçin</span>
+                            <!-- rotate-180 rotate-0 -->
+                            <svg class="list-arrow transition-all" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.29297 1.1875L5.99964 5.88083L10.7063 1.1875" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div
+                            class="p-4 w-full lg:max-w-sm rounded border bg-white border-[#C4C4C4] absolute top-[102px] hidden animate-drop list-dropdown">
+                            <div
+                                class="stroke-secondary w-full lg:max-w-sm flex border-b gap-4 border-[#C4C4C4] items-center rounded pb-4 border-opacity-25  ">
+                                <span> <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.58317 17.4993C13.9554 17.4993 17.4998 13.9549 17.4998 9.58268C17.4998 5.21043 13.9554 1.66602 9.58317 1.66602C5.21092 1.66602 1.6665 5.21043 1.6665 9.58268C1.6665 13.9549 5.21092 17.4993 9.58317 17.4993Z"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.3332 18.3327L16.6665 16.666" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span><input type="text"
+                                    class="w-full keyword-search focus:outline-none placeholder:text-[#C9CACD]"
+                                    placeholder="Search" />
+                            </div>
+                            <ul
+                                class="keyword-list pt-4 flex flex-col max-h-36 overflow-x-hidden overflow-y-auto gap-4 break-words">
+                                <!-- `<li class="py-1 keyword cursor-pointer transition-all hover:translate-x-4 hover:pl-4 w-64">${keyword}</li>` -->
+                            </ul>
+
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="flex font-semibold justify-center items-center w-full lg:max-w-sm py-4 rounded-[5px] bg-[#12DB63] bg-opacity-50 hover:bg-opacity-100 text-white">
+                        Here we go!
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="hidden lg:flex items-center justify-end w-7/12">
+            <img src="../assets/images/register_frame.svg" alt="" />
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</body>
+
+</html>

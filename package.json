@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./src/css/style.css --watch",
-    "prod": "npx tailwindcss -i ./src/tailwind.css -o ./src/css/style.css --minify"
+    "dev": "yarn tailwindcss -i ./src/tailwind.css -o ./src/css/style.css --watch",
+    "prod": "yarn tailwindcss -i ./src/tailwind.css -o ./src/css/style-minify.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.1.8"

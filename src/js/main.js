@@ -567,14 +567,6 @@ class PreRegister {
       }
     });
 
-    // const data = [
-    //   "UX Design",
-    //   "User-Centered Design",
-    //   "Facilitation",
-    //   "User Experience Design",
-    //   "Digital",
-    // ];
-
     let filterData = [...data];
 
     const keywordList = $(".keyword-list");
@@ -611,7 +603,7 @@ const profile = new Profile();
 
 profile.dropDown();
 profile.activeProfile();
-profile.defaultBoxes();
+// profile.defaultBoxes();
 profile.boxCategory();
 profile.mobFilter();
 profile.proTab();
@@ -665,3 +657,8 @@ preRegister.register();
 //   }
 // });
 
+$("#subscribeBtn").click(() => {
+  $("#modal").toggle(() => {
+    console.log("a");
+  });
+});

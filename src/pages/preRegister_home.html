@@ -15,10 +15,10 @@
         rel="stylesheet" />
 </head>
 
-<body class="font-medium text-secondary overflow-x-hidden">
+<body class="font-medium text-secondary overflow-x-hidden mx-auto overscroll-contain">
     <header class="flex justify-center py-2 mx-auto">
         <div
-            class="flex justify-between w-11/12 md:fixed z-50 sm:px-14 py-[26px] bg-opacity-75 items-center rounded-2xl md:backdrop-blur-2xl bg-white">
+            class="flex justify-between w-11/12 md:fixed z-50 sm:px-14 py-[26px] md:bg-opacity-75 items-center rounded-2xl md:backdrop-blur-2xl bg-white">
             <div class="cursor-pointer">
                 <a href="#" class="logo"><img src="../assets/images/buca_logo.svg" alt="Bucard Logo" /></a>
             </div>
@@ -34,20 +34,31 @@
                         <a href="#contact">Əlaqə</a>
                     </li>
                     <li class="cursor-pointer">
-                        <img src="../assets/icons/az_flag.svg" />
+                    <li class="cursor-pointer lang-btn">
+                        <img src="../assets/icons/az_flag.svg" alt="" />
                     </li>
-                    <li class="cursor-pointer hidden">
-                        <img src="../assets/icons/en_flag.svg" />
+                    <div
+                        class="w-44 absolute hidden font-normal p-6 rounded-md border z-50 bg-white border-secondary border-opacity-[0.06] top-16 right-10 space-y-8 transition-all animate-down lang-dropdown">
+                        <a href="#" class="flex gap-3 cursor-pointer w-fit">
+                            <img src="../assets/icons/az_flag.svg" alt="" />Azerbaijani
+                        </a>
+                        <a href="#" class="flex gap-3 cursor-pointer w-fit">
+                            <img src="../assets/icons/en_flag.svg" alt="" />English
+                        </a>
+                        <a href="#" class="flex gap-3 cursor-pointer w-fit">
+                            <img src="../assets/icons/ru_flag.svg" alt="" />Russian
+                        </a>
+                    </div>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="mt-4 md:mt-24">
-        <section id="hero">
+        <section id="hero" class="1">
             <img src="../assets/images/hero_background.svg" class="top-0 -z-10 absolute" alt="" />
             <div class="flex w-11/12 flex-col lg:flex-row justify-between items-center sm:px-14 mx-auto">
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 overscroll-contain">
                     <h1
                         class="font-bold text-center lg:text-start text-4xl md:text-5xl xl:text-[56px] title mb-4 lg:mb-6">
                         Bucard - biznes şəbəkəni yarat!
@@ -60,7 +71,7 @@
                     <button class="btn-register mb-8 lg:mb-12 md:max-w-none  max-w-xs md:mx-0 mx-auto">
                         Qeydiyyatdan keç /<span class="font-medium italic">Ödənişsiz!</span>
                     </button>
-                    <div class="features mb-10 flex flex-col items-center lg:items-start">
+                    <div class="features mb-10 flex-col items-center lg:items-start lg:flex hidden">
                         <p
                             class="text-text-black font-normal text-sm text-center lg:text-start lg:text-base w-full lg:w-5/6 xl:w-1/2 pb-3 content">
                             Will be available on Google Play Market and App Store soon
@@ -71,13 +82,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-end">
+                <div class="flex lg:flex-row flex-col gap-8 justify-end">
                     <img class="w-96 lg:w-96 xl:w-[466]" src="../assets/images/hero_img.png" alt="" />
+                    <div class="features flex-col items-center lg:items-start lg:hidden flex">
+                        <p
+                            class="text-text-black font-normal text-sm text-center lg:text-start lg:text-base w-full lg:w-5/6 xl:w-1/2 pb-3 content">
+                            Will be available on Google Play Market and App Store soon
+                        </p>
+                        <div class="flex gap-5 images opacity-100">
+                            <img src="../assets/images/apple_store.svg" alt="Download App Store" />
+                            <img src="../assets/images/google_play.svg" alt="Download Google Play" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="whyBuca" class="bg-profile relative mt-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-11/12 sm:px-14 mx-auto pt-14 pb-9">
+            <div class="grid grid-cols-1 lg:grid-cols-2 w-11/12 h-[576px] sm:px-14 mx-auto pt-14 pb-9">
                 <div>
                     <h2 class="title font-bold text-2xl md:text-[32px] mb-8">
                         Buca nədir?
@@ -164,9 +185,9 @@
                                     Netvorkinq
                                 </li>
                             </ul>
-                            <button class="btn-register">
+                            <!-- <button class="btn-register">
                                 Qeydiyyatdan keç /<span class="font-medium italic">Ödənişsiz!</span>
-                            </button>
+                            </button> -->
                         </div>
                         <div class="whybucard-content hidden transition-all animate-fadeIn">
                             <ul class="text-text-black font-normal space-y-6 py-12">
@@ -227,13 +248,13 @@
                                     Asan və sürətli kommunikasiya
                                 </li>
                             </ul>
-                            <button class="btn-register">
+                            <!-- <button class="btn-register bg-transparent">
                                 Qeydiyyatdan keç /<span class="font-medium italic">Ödənişsiz!</span>
-                            </button>
+                            </button> -->
                         </div>
                     </div>
                 </div>
-                <div class="flex lg:mt-0 mt-8">
+                <div class="flex lg:mt-0 mt-8 2xl:justify-end">
                     <img class="whybucad-img lg:top-0 left-0 lg:left-auto absolute lg:w-auto w-full transition-all animate-fadeIn"
                         src="../assets/images/personal_image.svg" alt="" />
                     <img class="whybucad-img lg:top-0 left-0 lg:left-auto absolute lg:w-auto w-full hidden transition-all animate-fadeIn"
@@ -672,7 +693,7 @@
                 </div>
                 <div class="grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-4 pricing hidden transition-all animate-fadeIn">
                     <div class="rounded hidden lg:block">
-                        <img src="../assets/images/pricing.svg" alt="">
+                        <img src="../assets/images/pricing.svg" class=" object-cover" alt="">
                     </div>
                     <div class="p-6 pt-8 h-fit border border-opacity-10 border-primary rounded">
                         <div class="space-y-3 mb-6">
@@ -1162,14 +1183,35 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="flex w-11/12 relative sm:px-14 mx-auto">
+                <div class="w-full p-5 sm:p-6 lg:p-10 bg-primary rounded-xl relative text-white">
+                    <p class="font-bold text-sm sm:text-base md:text-lg lg:text-3xl lg:w-1/2">Ön qeydiyyat ilə
+                        fəaliyyətə
+                        başlayan kimi ilk
+                        sən
+                        xəbərdar
+                        ol!</p>
+                    <button
+                        class="text-primary w-full py-1.5 px-1 text-sm bg-white rounded sm:btn-register-white mt-6 z-20">Qeydiyyatdan
+                        keç / <span class="font-medium italic">Ödənişsiz!</span></button>
+
+
+                </div>
+                <img src="../assets/images/cta.svg" alt="cta" class="absolute sm:h-full top-0 right-0" srcset="">
+
+            </div>
+        </section>
     </main>
-    <footer id="contact" class="hidden md:flex bg-profile">
-        <div class="flex gap-6 lg:gap-0 justify-between items-center w-11/12 lg:px-14 py-8 mx-auto">
+    <footer id="contact" class="bg-profile mt-12 sm:mt-20">
+        <div
+            class="flex gap-6 lg:gap-0 justify-between lg:flex-row flex-col items-center w-11/12 lg:px-14 py-8 mx-auto">
             <div class="flex flex-col gap-5">
-                <span><img src="../assets/images/buca_logo.svg" alt=""></span>
+                <span><img src="../assets/images/buca_logo.svg" class="hidden  lg:flex " alt=""></span>
                 <span class="font-normal text-sm">© All rights recerved • 2021 Bucha.Tech</span>
             </div>
-            <div class="text-lg font-normal flex flex-col gap-3">
+            <div
+                class="text-base sm:text-lg font-normal flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-12 lg:gap-3">
                 <span>+994 50 670 75 04</span>
                 <span>contact@buca.tech</span>
             </div>

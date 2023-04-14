@@ -16,13 +16,13 @@
 </head>
 
 <body class="font-medium">
-  <div class="overflow-hidden hidden md:block">
+  <div class="hidden overflow-hidden md:block">
     <header class="border-b border-border-primary h-[72px]">
-      <div class="flex items-center justify-between w-full h-full p-4 gap-4">
+      <div class="flex items-center justify-between w-full h-full gap-4 p-4">
         <div>
           <img src="../assets/images/buca_logo.svg" alt="" /></div>
         <div class="relative w-[490px]">
-          <div class="border flex rounded-full border-border-primary py-2 items-center px-6 gap-3">
+          <div class="flex items-center gap-3 px-6 py-2 border rounded-full border-border-primary">
             <div>
               <svg width="20" height="20" viewBox="0 0 20 20" class="stroke-primary" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -33,15 +33,15 @@
                   stroke-linejoin="round" />
               </svg>
             </div>
-            <input class="bg-transparent focus:outline-none w-full font-normal placeholder:opacity-75"
+            <input class="w-full font-normal bg-transparent focus:outline-none placeholder:opacity-75"
               placeholder="search profile" type="text" />
-            <a class="font-normal text-primary text-xs whitespace-nowrap" href="#">detailed search</a>
+            <a class="text-xs font-normal text-primary whitespace-nowrap" href="#">detailed search</a>
           </div>
 
           <div
-            class="absolute top-6 pt-7 shadow-md rounded-b-lg hidden border-x border-b border-border-primary z-10 origin-top w-full font-normal">
-            <div class="px-6 h-20 bg-white rounded-b-lg">
-              <div class="w-full items-center flex gap-3"><svg width="20" height="20" viewBox="0 0 20 20"
+            class="absolute z-10 hidden w-full font-normal origin-top border-b rounded-b-lg shadow-md top-6 pt-7 border-x border-border-primary">
+            <div class="h-20 px-6 bg-white rounded-b-lg">
+              <div class="flex items-center w-full gap-3"><svg width="20" height="20" viewBox="0 0 20 20"
                   class="stroke-primary" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.58317 17.4993C13.9554 17.4993 17.4998 13.9549 17.4998 9.58268C17.4998 5.21043 13.9554 1.66602 9.58317 1.66602C5.21092 1.66602 1.6665 5.21043 1.6665 9.58268C1.6665 13.9549 5.21092 17.4993 9.58317 17.4993Z"
@@ -56,7 +56,7 @@
         <div class="relative inline-block text-left">
           <div class="p-3">
             <button type="button"
-              class="inline-flex w-full items-center gap-2 justify-center stroke-black transition-all" id="drop-down">
+              class="inline-flex items-center justify-center w-full gap-2 transition-all stroke-black" id="drop-down">
               Account
               <svg id="drop-down-icon" class="transition-all rotate-0" width="12" height="7" viewBox="0 0 12 7"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@
             </button>
           </div>
           <div
-            class="absolute  overflow-hidden right-0 z-10 mt-1 w-52 origin-top hidden  rounded-md bg-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none"
+            class="absolute right-0 z-10 hidden mt-1 overflow-hidden origin-top bg-white rounded-md shadow-md w-52 ring-1 ring-black ring-opacity-5 focus:outline-none"
             id="drop-down-items">
             <div class="p-2 space-y-1">
               <a href="#" class="drop-down-item">
@@ -123,8 +123,8 @@
     <main class="flex h-[calc(100vh-72px)]">
       <div class="flex">
         <nav class="border-r border-border-primary h-screen sticky top-0 bg-white overflow-hidden w-[72px] ">
-          <div class="flex flex-col w-full justify-between items-center content-between h-full py-8 px-4">
-            <div class="border-b border-border-primary pb-6 flex flex-col gap-8">
+          <div class="flex flex-col items-center content-between justify-between w-full h-full px-4 py-8">
+            <div class="flex flex-col gap-8 pb-6 border-b border-border-primary">
 
               <a href="../pages/free_profile.html" class="flex items-center" id="profile_tab">
                 <div class="profile-active"></div>
@@ -245,7 +245,7 @@
               </a>
             </div>
           </div>
-          <div class="flex justify-center relative">
+          <div class="relative flex justify-center">
             <img src="../assets/images/update_profile.svg" alt="">
             <div class="absolute z-10 bottom-0 pb-[18px]">
               <div class="flex gap-3 mb-[22.5px] items-center">
@@ -260,20 +260,61 @@
                       fill="white" />
                   </g>
                 </svg>
-                <span class="text-white text-sm">Upgrade to Pro</span>
+                <span class="text-sm text-white">Upgrade to Pro</span>
               </div>
               <a href="" class=" relative rounded-lg text-sm text-primary bg-white px-7 py-2.5">Upgrade Now</a>
             </div>
           </div>
         </aside>
       </div>
-      <section class="overflow-auto flex-grow">
+      <section class="flex-grow overflow-auto">
+
+        
         <div class="sidebar-container">
-          <div class="p-8 flex flex-col gap-6 w-full">
+          <div class="flex flex-col w-full gap-6 p-8">
             <h2 class="text-[28px] sidebar-title"></h2>
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 all-boxes">
-              <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 all-boxes">
+              <div class="profile-box border-orange-primary">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
+              <img src="${img}" alt="" />
+            </div>
+            <div class="flex justify-end">
+              <!-- <a>
+                <img src="../assets/icons/more-horizontal.svg" alt="" />
+              </a> -->
+            </div>
+            <div class="flex items-end ">
+              <span>Specials</span>
+            </div>
+            <div class="flex items-end justify-end gap-2">
+              <div>
+                <img src="../assets/icons/group.svg" alt="" />
+              </div>
+              <span>0</span>
+            </div>
+              </div>
+              <div class="relative flex items-center justify-center profile-box border-primary">
+                <div class="absolute bg-white shadow top-4 text-[12px] px-4 py-2 leading-3 rounded-full">
+                  create your first group
+                </div>
+                <div class="absolute w-2 h-2 bg-white rounded-full shadow-sm top-10"></div>
+                <div class="flex items-center justify-center rounded-full h-14 w-14 bg-avatar">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="stroke-primary" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12H16"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16V8"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="sidebar-container">
+          <div class="flex flex-col w-full gap-6 p-8">
+            <h2 class="text-[28px] sidebar-title"></h2>
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 all-boxes">
+            <div class="profile-box">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
               <img src="${img}" alt="" />
             </div>
             <div class="flex justify-end">
@@ -281,10 +322,36 @@
                 <img src="../assets/icons/more-horizontal.svg" alt="" />
               </a>
             </div>
-            <div class=" flex items-end">
+            <div class="flex items-end ">
               <span>${title}</span>
             </div>
-            <div class="flex justify-end gap-2 items-end">
+            <div class="flex items-end justify-end gap-2">
+              <div>
+                <img src="../assets/icons/group.svg" alt="" />
+              </div>
+              <span>${added}</span>
+            </div>
+          </div> 
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-container">
+          <div class="flex flex-col w-full gap-6 p-8">
+            <h2 class="text-[28px] sidebar-title"></h2>
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 all-boxes">
+              <!-- <div class="profile-box">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
+              <img src="${img}" alt="" />
+            </div>
+            <div class="flex justify-end">
+              <a>
+                <img src="../assets/icons/more-horizontal.svg" alt="" />
+              </a>
+            </div>
+            <div class="flex items-end ">
+              <span>${title}</span>
+            </div>
+            <div class="flex items-end justify-end gap-2">
               <div>
                 <img src="../assets/icons/group.svg" alt="" />
               </div>
@@ -295,11 +362,11 @@
           </div>
         </div>
         <div class="sidebar-container">
-          <div class="p-8 flex flex-col gap-6 w-full">
+          <div class="flex flex-col w-full gap-6 p-8">
             <h2 class="text-[28px] sidebar-title"></h2>
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 all-boxes">
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 all-boxes">
               <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
               <img src="${img}" alt="" />
             </div>
             <div class="flex justify-end">
@@ -307,10 +374,10 @@
                 <img src="../assets/icons/more-horizontal.svg" alt="" />
               </a>
             </div>
-            <div class=" flex items-end">
+            <div class="flex items-end ">
               <span>${title}</span>
             </div>
-            <div class="flex justify-end gap-2 items-end">
+            <div class="flex items-end justify-end gap-2">
               <div>
                 <img src="../assets/icons/group.svg" alt="" />
               </div>
@@ -321,11 +388,11 @@
           </div>
         </div>
         <div class="sidebar-container">
-          <div class="p-8 flex flex-col gap-6 w-full">
+          <div class="flex flex-col w-full gap-6 p-8">
             <h2 class="text-[28px] sidebar-title"></h2>
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 all-boxes">
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 all-boxes">
               <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
               <img src="${img}" alt="" />
             </div>
             <div class="flex justify-end">
@@ -333,10 +400,10 @@
                 <img src="../assets/icons/more-horizontal.svg" alt="" />
               </a>
             </div>
-            <div class=" flex items-end">
+            <div class="flex items-end ">
               <span>${title}</span>
             </div>
-            <div class="flex justify-end gap-2 items-end">
+            <div class="flex items-end justify-end gap-2">
               <div>
                 <img src="../assets/icons/group.svg" alt="" />
               </div>
@@ -347,11 +414,11 @@
           </div>
         </div>
         <div class="sidebar-container">
-          <div class="p-8 flex flex-col gap-6 w-full">
+          <div class="flex flex-col w-full gap-6 p-8">
             <h2 class="text-[28px] sidebar-title"></h2>
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 all-boxes">
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 all-boxes">
               <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
               <img src="${img}" alt="" />
             </div>
             <div class="flex justify-end">
@@ -359,10 +426,10 @@
                 <img src="../assets/icons/more-horizontal.svg" alt="" />
               </a>
             </div>
-            <div class=" flex items-end">
+            <div class="flex items-end ">
               <span>${title}</span>
             </div>
-            <div class="flex justify-end gap-2 items-end">
+            <div class="flex items-end justify-end gap-2">
               <div>
                 <img src="../assets/icons/group.svg" alt="" />
               </div>
@@ -372,64 +439,13 @@
             </div>
           </div>
         </div>
-        <div class="sidebar-container">
-          <div class="p-8 flex flex-col gap-6 w-full">
-            <h2 class="text-[28px] sidebar-title"></h2>
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 all-boxes">
-              <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
-              <img src="${img}" alt="" />
-            </div>
-            <div class="flex justify-end">
-              <a>
-                <img src="../assets/icons/more-horizontal.svg" alt="" />
-              </a>
-            </div>
-            <div class=" flex items-end">
-              <span>${title}</span>
-            </div>
-            <div class="flex justify-end gap-2 items-end">
-              <div>
-                <img src="../assets/icons/group.svg" alt="" />
-              </div>
-              <span>${added}</span>
-            </div>
-          </div> -->
-            </div>
-          </div>
-        </div>
-        <div class="sidebar-container">
-          <div class="p-8 flex flex-col gap-6 w-full">
-            <h2 class="text-[28px] sidebar-title"></h2>
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 all-boxes">
-              <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
-              <img src="${img}" alt="" />
-            </div>
-            <div class="flex justify-end">
-              <a>
-                <img src="../assets/icons/more-horizontal.svg" alt="" />
-              </a>
-            </div>
-            <div class=" flex items-end">
-              <span>${title}</span>
-            </div>
-            <div class="flex justify-end gap-2 items-end">
-              <div>
-                <img src="../assets/icons/group.svg" alt="" />
-              </div>
-              <span>${added}</span>
-            </div>
-          </div> -->
-            </div>
-          </div>
-        </div>
+
       </section>
     </main>
   </div>
   <div class="md:hidden">
     <div class="flex px-5 py-3.5 items-center sticky top-0 bg-white shadow-md">
-      <div class="flex justify-start filter-mob cursor-pointer"><svg width="24" height="24" viewBox="0 0 24 24"
+      <div class="flex justify-start cursor-pointer filter-mob"><svg width="24" height="24" viewBox="0 0 24 24"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M19 22V11" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
             stroke-linejoin="round" />
@@ -451,14 +467,14 @@
             stroke-linejoin="round" />
         </svg>
       </div>
-      <h2 class="flex justify-center flex-grow font-semibold text-xl sidebar-title"></h2>
+      <h2 class="flex justify-center flex-grow text-xl font-semibold sidebar-title"></h2>
     </div>
     <div class="filter-content">
       <div class="sidebar-container-mob">
-        <div class="px-5 py-6 flex flex-col gap-6 w-full">
+        <div class="flex flex-col w-full gap-6 px-5 py-6">
           <div class="grid gap-4 all-boxes">
             <!-- <div class="profile-box">
-            <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+            <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
               <img src="${img}" alt="" />
             </div>
             <div class="flex justify-end">
@@ -466,10 +482,10 @@
                 <img src="../assets/icons/more-horizontal.svg" alt="" />
               </a>
             </div>
-            <div class=" flex items-end">
+            <div class="flex items-end ">
               <span>${title}</span>
             </div>
-            <div class="flex justify-end gap-2 items-end">
+            <div class="flex items-end justify-end gap-2">
               <div>
                 <img src="../assets/icons/group.svg" alt="" />
               </div>
@@ -480,10 +496,10 @@
         </div>
       </div>
       <div class="sidebar-container-mob">
-        <div class="px-5 py-6 flex flex-col gap-6 w-full">
+        <div class="flex flex-col w-full gap-6 px-5 py-6">
           <div class="grid gap-4 all-boxes">
             <!-- <div class="profile-box">
-          <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+          <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
             <img src="${img}" alt="" />
           </div>
           <div class="flex justify-end">
@@ -491,10 +507,10 @@
               <img src="../assets/icons/more-horizontal.svg" alt="" />
             </a>
           </div>
-          <div class=" flex items-end">
+          <div class="flex items-end ">
             <span>${title}</span>
           </div>
-          <div class="flex justify-end gap-2 items-end">
+          <div class="flex items-end justify-end gap-2">
             <div>
               <img src="../assets/icons/group.svg" alt="" />
             </div>
@@ -505,10 +521,10 @@
         </div>
       </div>
       <div class="sidebar-container-mob">
-        <div class="px-5 py-6 flex flex-col gap-6 w-full">
+        <div class="flex flex-col w-full gap-6 px-5 py-6">
           <div class="grid gap-4 all-boxes">
             <!-- <div class="profile-box">
-          <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+          <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
             <img src="${img}" alt="" />
           </div>
           <div class="flex justify-end">
@@ -516,10 +532,10 @@
               <img src="../assets/icons/more-horizontal.svg" alt="" />
             </a>
           </div>
-          <div class=" flex items-end">
+          <div class="flex items-end ">
             <span>${title}</span>
           </div>
-          <div class="flex justify-end gap-2 items-end">
+          <div class="flex items-end justify-end gap-2">
             <div>
               <img src="../assets/icons/group.svg" alt="" />
             </div>
@@ -530,10 +546,10 @@
         </div>
       </div>
       <div class="sidebar-container-mob">
-        <div class="px-5 py-6 flex flex-col gap-6 w-full">
+        <div class="flex flex-col w-full gap-6 px-5 py-6">
           <div class="grid gap-4 all-boxes">
             <!-- <div class="profile-box">
-          <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+          <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
             <img src="${img}" alt="" />
           </div>
           <div class="flex justify-end">
@@ -541,10 +557,10 @@
               <img src="../assets/icons/more-horizontal.svg" alt="" />
             </a>
           </div>
-          <div class=" flex items-end">
+          <div class="flex items-end ">
             <span>${title}</span>
           </div>
-          <div class="flex justify-end gap-2 items-end">
+          <div class="flex items-end justify-end gap-2">
             <div>
               <img src="../assets/icons/group.svg" alt="" />
             </div>
@@ -555,10 +571,10 @@
         </div>
       </div>
       <div class="sidebar-container-mob">
-        <div class="px-5 py-6 flex flex-col gap-6 w-full">
+        <div class="flex flex-col w-full gap-6 px-5 py-6">
           <div class="grid gap-4 all-boxes">
             <!-- <div class="profile-box">
-          <div class="rounded-full bg-avatar w-14 h-14 flex justify-center items-center">
+          <div class="flex items-center justify-center rounded-full bg-avatar w-14 h-14">
             <img src="${img}" alt="" />
           </div>
           <div class="flex justify-end">
@@ -566,10 +582,10 @@
               <img src="../assets/icons/more-horizontal.svg" alt="" />
             </a>
           </div>
-          <div class=" flex items-end">
+          <div class="flex items-end ">
             <span>${title}</span>
           </div>
-          <div class="flex justify-end gap-2 items-end">
+          <div class="flex items-end justify-end gap-2">
             <div>
               <img src="../assets/icons/group.svg" alt="" />
             </div>
@@ -581,7 +597,7 @@
       </div>
     </div>
     <div class="flex sticky w-full bottom-0 bg-[#FBFCFC] px-8 py-6 stroke-icon">
-      <div class="flex justify-between w-full items-center">
+      <div class="flex items-center justify-between w-full">
         <div class="mob-nav">
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -634,16 +650,16 @@
         </div>
       </div>
     </div>
-    <div class="w-full bottom-0 h-screen absolute hidden filter-container ">
-      <div class="fixed bottom-0 inset-0 h-screen bg-black bg-opacity-70">
+    <div class="absolute bottom-0 hidden w-full h-screen filter-container ">
+      <div class="fixed inset-0 bottom-0 h-screen bg-black bg-opacity-70">
         <!-- <div class="animate-fadeInModal animate-fadeOutModal"></div> -->
         <div class="bg-white z-50 w-full fixed bottom-0 rounded-t-[20px] filter-animate ">
           <div class="px-5 pt-4 pb-6">
-            <div class="flex justify-center mb-4 h-5 cursor-pointer  filter-close">
+            <div class="flex justify-center h-5 mb-4 cursor-pointer filter-close">
               <div class="w-14 h-1 bg-[#C3C5D4] rounded-full"></div>
             </div>
             <div>
-              <p class="text-2xl mb-6">Filters</p>
+              <p class="mb-6 text-2xl">Filters</p>
               <div class="mb-8">
                 <div class="flex flex-col gap-2 transition-all">
                   <!-- <a href="sidebar-active"></a> -->

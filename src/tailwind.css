@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,21 +8,24 @@
   html {
     font-family: "Poppins";
   }
+  input {
+    @apply focus:outline-none;
+  }
 }
 
 @layer components {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth scroll-p-12;
   }
   .drop-down-item {
     @apply flex py-2 px-3 items-center text-sm gap-2.5 w-full border border-border-primary rounded-lg whitespace-nowrap hover:bg-primary hover:text-white hover:stroke-white stroke-icon;
   }
   .avatar {
-    @apply rounded-full w-10 h-10 flex items-center justify-center hover:cursor-pointer;
+    @apply flex items-center justify-center w-10 h-10 rounded-full hover:cursor-pointer;
   }
 
   .profile-active {
-    @apply w-1 h-14 bg-primary rounded-r-lg absolute left-0;
+    @apply absolute left-0 w-1 rounded-r-lg h-14 bg-primary;
   }
 
   .sidebar-item {
@@ -32,11 +37,11 @@
   }
 
   .profile-box {
-    @apply grid grid-cols-2 grid-rows-2 justify-between h-40 p-6 text-secondary border border-border-primary rounded-lg;
+    @apply grid justify-between h-40 grid-cols-2 grid-rows-2 p-6 border rounded-lg text-secondary border-border-primary;
   }
 
   .sidebar-active {
-    @apply bg-primary text-white stroke-white;
+    @apply text-white bg-primary stroke-white;
   }
 
   .mob-nav {
@@ -44,7 +49,7 @@
   }
 
   .pro-active {
-    @apply bg-white rounded-md transition-all duration-300 shadow-box scale-105;
+    @apply transition-all duration-300 scale-105 bg-white rounded-md shadow-box;
   }
 
   .pro-tab {
@@ -60,15 +65,15 @@
   }
 
   .projects {
-    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4;
+    @apply grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3;
   }
 
   .project {
-    @apply p-3 min-w-min border border-border-secondary rounded-lg;
+    @apply p-3 border rounded-lg min-w-min border-border-secondary;
   }
 
   .savedKeywords {
-    @apply grid lg:grid-cols-2 p-8 gap-4 max-w-5xl;
+    @apply grid max-w-5xl gap-4 p-8 lg:grid-cols-2;
   }
 
   .savedKeyword {
@@ -76,19 +81,23 @@
   }
 
   .addKeyword {
-    @apply font-normal flex items-center whitespace-nowrap pb-2 pl-6;
+    @apply flex items-center pb-2 pl-6 font-normal whitespace-nowrap;
   }
 
   .btn-register {
-    @apply px-7 py-3 md:px-12 w-full lg:w-fit md:py-3 rounded flex justify-center text-sm md:text-base items-center text-white bg-primary font-normal gap-1;
+    @apply flex items-center justify-center w-full gap-1 py-3 text-sm font-normal text-white transition-all rounded px-7 md:px-12 lg:w-fit md:py-3 md:text-base bg-primary;
+  }
+
+  .btn-register-white {
+    @apply flex items-center justify-center w-full gap-1 py-3 text-sm font-normal bg-white rounded px-7 md:px-12 lg:w-fit md:py-3 md:text-base text-primary;
   }
 
   .btn-personal {
-    @apply flex justify-center items-center border border-r-0 border-primary border-opacity-10 rounded-l;
+    @apply flex items-center justify-center border border-r-0 rounded-l border-primary border-opacity-10;
   }
 
   .btn-business {
-    @apply flex justify-center items-center gap-3 border border-l-0 border-primary border-opacity-10 rounded-r;
+    @apply flex items-center justify-center gap-3 border border-l-0 rounded-r border-primary border-opacity-10;
   }
 
   .check-box {
@@ -96,12 +105,28 @@
   }
 
   .pro-tab-mob {
-    @apply relative p-1 pb-3 sm:p-4 cursor-pointer;
+    @apply relative p-1 pb-3 cursor-pointer sm:p-4;
   }
 
   .pro-tab-mob-active {
     @apply absolute -bottom-0.5 left-0 bg-primary transition-all w-full  h-0.5 animate-opening;
   }
+
+  .bill-tab {
+    @apply relative py-[18px] px-6 cursor-pointer rounded-lg bg-profile;
+  }
+
+  .bill-tab-active {
+    @apply relative py-[18px] px-6 cursor-pointer rounded-lg border border-primary;
+  }
+
+  .keyword {
+    @apply flex justify-center items-center px-[29px] h-[38px] py-3 rounded bg-primary/5 text-sm text-primary leading-[14px] cursor-pointer whitespace-nowrap;
+  }
+}
+
+#input-keywords::-webkit-scrollbar {
+  display: none;
 }
 
 /* width */
